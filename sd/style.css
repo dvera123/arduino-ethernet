@@ -1,0 +1,239 @@
+body{
+	background:
+	linear-gradient(135deg, #333 22px, #333 22px, #d9ecff 24px, transparent 24px, transparent 67px, #333 67px, #d9ecff 69px, transparent 69px),
+	linear-gradient(225deg, #333 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+	background-color:#333;
+	background-size: 64px 128px;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+}
+.wrapper{
+	margin: 0px auto 0px auto;
+}
+
+/* ROBOT CSS */
+.head{
+	border: 15px #fff groove;
+	background: #fff;
+	border-radius: 30%;
+	height: 475px;
+	margin: 70px auto;
+	width: 475px;
+	box-shadow: inset 0px 0px 20px #888888;
+	-webkit-box-shadow: inset 0px 0px 20px #888888;
+}
+/*eyes section */
+.eyes{
+	float: left;
+	width: 100%;
+}
+.eyes ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.eyes ul li{
+	background: #000;
+	border-radius: 50%;
+	height: 60px;
+	margin: 115px 80px 0px 80px;
+	width: 65px;
+}
+.eyes ul li:nth-child(1){
+	box-shadow: 0 0px 10px #000000;
+	float: left;
+}
+.eyes ul li:nth-child(1) span{
+	background-color: white;
+	border-radius: 50%;
+	float: right;
+	display: block;
+	height: 28px;
+	margin: 17px 0px 6px 6px;
+	width: 30px;
+}
+.eyes ul li:nth-child(2){
+	border: 6px solid #bbb;
+	float: right;
+	height: 75px;
+	margin-top: 100px;
+	width: 75px;
+	box-shadow: 0 0 30px #000000;
+
+}
+.eyes ul li:nth-child(2) span{
+	background-color: red;
+	border-radius: 50%;
+	float: right;
+	display: block;
+	height: 20px;
+	margin: 27px 26px 6px 0px;
+	width: 20px;
+	animation:myfirst robot 1s infinite;
+	-webkit-animation: robot 1s infinite;
+	-moz-animation: robot 1s infinite;
+	-ms-animation: robot 1s infinite;
+	-o-animation: robot 1s infinite;
+	animation: robot 1s infinite;
+	
+}
+/* mouth section */
+.mouth{
+	clear: both;
+	height: 110px;
+	width: 100%;
+}
+.mouth ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.mouth ul li:nth-child(1){
+
+	
+	margin: 0 auto;
+	height: 30px;
+	width: 70%;
+
+}
+.mouth ul li:nth-child(2){
+	background: #000;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	margin: 5px auto;
+	height: 25px;
+	width: 65%;
+
+	box-shadow: 0 0px 10px #000000;
+}
+/* neck section	*/
+.neck{
+	margin: 0 auto;
+	background: gray;
+	width: 220px;
+	height: 50px;
+	display: none;
+	box-shadow: 0px 10px 20px #888888; 
+	-webkit-box-shadow: 0px 10px 20px #888888; 
+}
+/* forhead section */
+.forehead{
+	margin: 0 auto;
+	width: 220px;
+	height: 50px;
+
+}
+
+
+.blink{
+	-webkit-animation: blink 5s infinite;
+	-moz-animation: blink 5s infinite;
+	-ms-animation: blink 5s infinite;
+	-o-animation: blink 5s infinite;
+	animation: blink 5s infinite;
+	margin: 110px 0px 0px 20px;
+	position: absolute;
+	height: 70px;
+	background: #fff;
+	width: 200px;
+	z-index: 1;
+}
+
+keyframes blink{
+	0%,97%{opacity:0}98%,100%{opacity:1}
+	}
+@-webkit-keyframes blink{
+	0%,97%{opacity:0}98%,100%{opacity:1}
+	}
+@-o-keyframes blink{0%,97%{opacity:0}98%,100%{opacity:1}
+	}
+@-ms-keyframes blink{0%,97%{opacity:0}98%,100%{opacity:1}
+	}
+@keyframes blink{0%,97%{opacity:0}98%,100%{opacity:1}
+	}
+
+@keyframes robot
+{
+	from {background:red;}
+	to {background:white;}
+}
+@-webkit-keyframes robot
+{
+	from {background:red;}
+	to {background:white;}
+}
+@-moz-keyframes robot
+{
+	from {background:red;}
+	to {background:white;}
+}
+@-o-keyframes robot
+{
+	from {background:red;}
+	to {background:white;}
+}
+@-ms-keyframes robot
+{
+	from {background:red;}
+	to {background:white;}
+}
+
+/* MENU */	
+    	
+.menu{ width: 400px; height: 1020px; position: absolute; right: -400px; background: #fff; top:0; border-left: 1px solid #fff; border-bottom: 1px solid #fff;}
+    	
+.list{ width: 90%; float: left; margin-left: 5%; background: #FFF; padding-left: 0px; list-style-type: none; }
+.list li{ height: 50px; line-height: 50px; border-top: 1px solid #F5F5F5; padding-left: 10px; font-size: 22px; cursor: pointer; }
+.list li:hover,
+.list li.selected{ color: #fff; background: #666; }
+
+#button{display: none;}
+
+.message{
+	border: 10px solid #333;
+	margin: 110px;
+	border-radius: 50%;
+	position: absolute;
+	background: #fff;
+	width: 320px;
+	height: 120px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+
+.message h3{
+	text-align: center;
+	font-size: 36px;
+}
+
+.message ul{
+	list-style: none;
+}
+
+.message ul .li1{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 50%;
+	border: 10px solid #333;
+	margin-top: -35px;
+	right: 15px;
+}
+
+.message ul .li2{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 50%;
+	border: 10px solid #333;
+    margin-top: -5px;
+    right: 0px;
+}
+
+    	
